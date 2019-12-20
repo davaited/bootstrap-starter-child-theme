@@ -1,0 +1,121 @@
+/*
+Theme Name: pw-reklama landing page
+Template: wp-bootstrap-starter
+Text Domain: wp-bootstrap-starter-child
+
+Description: Дочерняя тема для темы WP Bootstrap Starter
+Author: akarpov1993@gmail.com
+Version: 1.0
+*/
+
+/*import*/
+@import url("../wp-bootstrap-starter/style.css");
+
+/* плавная загрузка страниц */
+/**/
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+ 
+body {
+  -webkit-animation: fade-in 1s linear; /* Safari 4+ */
+  -moz-animation: fade-in 1s linear; /* Fx 5+ */
+  -o-animation: fade-in 1s linear; /* Opera 12+ */
+  animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
+}
+
+/*contact-form*/
+/**/
+form.wpcf7-form input {
+	border: none !important;
+    border-radius: 3px;
+    padding: 5px 10px;
+	cursor: auto;
+}
+form p:not(.form-policy) {
+    margin-bottom: 0px;
+}
+
+span.wpcf7-not-valid-tip,
+div.wpcf7-validation-errors, 
+div.wpcf7-acceptance-missing {
+	font-size: 12px !important;
+	display: block;
+	margin: auto;
+}
+p.form-policy {
+	font-size: 12px !important;
+}
+form .wpcf7-submit {
+	display: block;
+	padding: 10px 15px !important;
+}
+form .wpcf7-list-item {
+    display: inline !important;
+}
+div.wpcf7 .ajax-loader {
+	display: none;
+}
+span.wpcf7-list-item {
+	margin: 0;
+}
+form textarea {
+	height: 190px;
+}
+
+.form-string .fields > * {
+    float: left;
+    width: 32%;
+    margin-right: 1%;
+}
+form .form-string .fields .wpcf7-submit {
+	padding: 7px 15px !important;
+}
+.form-string p.form-policy {
+	display: inline-table;
+}
+
+
+/* Кастомные поля в шапке */
+/**/
+#header-contact .header-contact-list,
+#header-contact .social-buttons-list {
+	list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+#header-contact .header-contact-list > li,
+#header-contact .social-buttons-list > li {
+    display: block;
+	float: left;
+}
+.header-contact-list i,
+.social-buttons-list i {
+    padding: 5px;
+}
+.header-contact-list a,
+.social-buttons-list a{
+    display: block;
+    margin: 5px 0;
+}
+.header-contact-list a:hover,
+.social-buttons-list a:hover {
+	text-decoration: none;
+}
+a.header-phone {
+    margin-right: 5px;
+}
+a {
+    transition: all .5s;
+}
+#masthead {
+	clear: both;
+}
+.header-social-buttons {
+	float: left;
+}
+.header-contact {
+	float: right;
+}
